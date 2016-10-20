@@ -73,7 +73,9 @@ manipulate the default PHP `$_SESSION` global.
     }
 
 Alternatively, create your own implementation of the `Session` interface if you need some different functionality, or
-you want to create an adapter to a different session library instead.
+you want to create an adapter to a different session library instead. An Abstract class is provided that performs all
+the boilerplate code to implement the ArrayAccess and 'magic' property access methods, leaving you only needing to
+implement `get`, `set`, `isset` and `unset`.
 
 During testing, you can create a mock of the `Session` interface to provide whatever session data you like using your
 favourite mocking framework, or even using your least favourite one.
