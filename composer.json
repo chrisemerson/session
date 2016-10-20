@@ -1,0 +1,23 @@
+{
+    "name": "cemerson/session",
+    "description": "Ultra-simple session abstraction for PHP 7, allowing developers to properly mock session related code",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Emerson",
+            "email": "chris@cemerson.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CEmerson\\Session\\": "src"
+        }
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "bin-dir": "bin"
+    }
+}
